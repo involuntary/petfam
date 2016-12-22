@@ -50,7 +50,7 @@ function AddMYLike(pid){
                     <div class="coralbg user-pad toppad">
 
                         <h1>[TITLE-NOLINK]</h1>
-<!-- JOSH// Added profile attributes -->>
+<!-- JOSH// Added profile attributes -->
                         <h4 class="white">[GENDER-ICON] [GENDER] / [AGE] / [neighbourhood] </h4>
 
                         <?php  ?>
