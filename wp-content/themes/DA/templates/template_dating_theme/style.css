@@ -1,0 +1,89 @@
+ /* =============================================================================
+  DATING THEME BY MARK FAIL
+   ========================================================================== */
+ 
+@import url(style_childtheme.css);
+
+
+/* REMOVE ROUNDED CORNERS */ 
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+} 
+
+/*------------------------------------------------------*/
+/* BODY
+/*------------------------------------------------------*/
+
+body { background:#fafafa; } 
+header { background: rgb(0, 118, 163); }
+
+
+/*------------------------------------------------------*/
+/* TOP NAVIGATION
+/*------------------------------------------------------*/
+
+#core_header_navigation { border-bottom: 1px solid #0784b3; background: #000;}
+#core_header_navigation .nav  > li a, #core_header_navigation .welcometext { color: #fff; text-transform: uppercase; font-weight:normal; font-size:11px;  }
+
+/*------------------------------------------------------*/
+/*  MAIN MENU
+/*------------------------------------------------------*/
+
+#core_menu_wrapper { background: #ed2a91; }
+#core_menu_wrapper .navbar-collapse { border:0px;   }
+#core_menu_wrapper .navbar-nav > li { }
+#core_menu_wrapper .navbar-nav > li a { color:#74cef1; text-align:center; text-transform: uppercase;  }
+#core_menu_wrapper .navbar-nav > li.current-menu-item a { color:#fff; font-weight:bold; }
+ 
+#core_menu_wrapper .navbar-nav > li:hover, #core_menu_wrapper .navbar-nav > li.current-menu-item {  }
+
+.header_style2 .navbar-nav li a { color:#74cef1; }
+.header_style2 .navbar-nav li.current-menu-item a { color:#fff;  }
+.header_style2 .navbar-nav li .dropdown-menu a { color:#000; }
+
+.header_style2 .navbar-nav {  background: none; }
+
+#wlt_smalldevicemenubar a.b1 {  background: #ED2A91; }
+
+
+/*------------------------------------------------------*/
+/*  PANELS
+/*------------------------------------------------------*/
+
+#core_advanced_search_widget_box .panel-heading, .panel-default>.panel-heading { background:#fff; }
+.search .core_middle_wrap, .archive .core_middle_wrap { background: #fff;    padding: 20px;    border: 1px solid #ddd; margin-bottom:20px; }
+
+/*------------------------------------------------------*/
+/*  BREADCRUMBS
+/*------------------------------------------------------*/
+
+#core_breadcrumbs { background:#fff; }
+
+/*------------------------------------------------------*/
+/*  SINGLE
+/*------------------------------------------------------*/
+
+.dauserprofile .coralbg, .dauserprofile .nav-tabs>li.active a, .dauserprofile .nav-tabs>li.active>a:focus, .dauserprofile .nav-tabs>li.active>a:hover {
+    background-color: #0076a3;
+}
+
+/*------------------------------------------------------*/
+/*  HOME
+/*------------------------------------------------------*/
+
+#mainbox h1 { margin-top:0px; font-size:26px;   }
+ 
+#mainbox {  background: #0076a3 url(img/transparent.png) bottom left repeat-x;  border-bottom:10px solid #ddd; overflow-y:hidden; }
+#mainbox p { font-size:18px;   }
+#mainbox .block { padding:20px; margin-bottom:20px;     background: #1C91BD;    border: 1px solid #0EA8E2; }
+#mainbox .block .block-content { color:#fff; }
+#mainbox form { margin-left:-10px; margin-bottom:0px; border-top: 1px dashed #2F9FCA;
+    padding-top: 20px;  }
+#mainbox .btn {     color: #FFFFFF;    background-color: #006B94;    border-color: #3FA9D2;    font-size: 18px;    padding: 10px;    text-transform: uppercase; }
+#mainphoto { text-align:right; }
+#mainphoto img { margin:auto auto; }
+
+.home .owl-carousel.style1 { border:1px solid #ddd; }
+.home footer { margin-top:30px; }

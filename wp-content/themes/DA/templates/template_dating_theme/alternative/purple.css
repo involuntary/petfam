@@ -1,0 +1,10 @@
+
+.overlay, #mainbox { background: #5A0E59; }
+#core_logo .submain { color:#fff; }
+.home #TopBannerMain, span.ftext, .home .jumbostyle1 .btn, .btn-primary, #core_menu_wrapper .navbar-nav > li,._searchresultsblock .ext1 li, .menu_style4 .button  { 
+background: #A552A3;
+}
+#mainbox .block {    background: rgba(0, 0, 0, 0.36);    border: 1px solid rgba(0, 0, 0, 0.49); }
+#mainbox form { border-top: 1px dashed rgba(204, 204, 204, 0.59); }
+#core_header_navigation {    border-bottom: 1px solid #000000; }
+#mainbox .btn {    background-color: rgba(0, 0, 0, 0.38);    border-color: #000000; }

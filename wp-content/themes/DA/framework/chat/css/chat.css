@@ -1,0 +1,84 @@
+/* MAIN FORM */
+#login-form,
+#error { color: red; }
+
+/* CHAT WINDOW */
+#wlt_chatwindow { 
+border: 1px solid #ccc;
+border-top: 0px;
+padding: 0;
+position: relative;
+margin-bottom: 6px;
+background: white;
+color: #585858;
+-webkit-transition: 2s background ease;
+-moz-transition: 2s background ease;
+-o-transition: 2s background ease;
+transition: 2s background ease;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+-webkit-box-shadow: 0px 0px 13px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 13px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 13px rgba(0,0,0,0.2);
+margin-top:20px;
+margin-bottom:20px;
+}
+#wlt_chatwindow table { margin-bottom:0px; }
+ 
+#send-message td, #wlt_chatwindow .head {  vertical-align: middle; 
+padding: 6px;
+color: #585858;
+text-shadow: none;
+background-color: #f3f3f3;
+background-image: -moz-linear-gradient(top,#f6f6f6,#eee);
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#f6f6f6),to(#eee));
+background-image: -webkit-linear-gradient(top,#f6f6f6,#eee);
+background-image: -o-linear-gradient(top,#f6f6f6,#eee);
+background-image: linear-gradient(to bottom,#f6f6f6,#eee);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff6f6f6', endColorstr='#ffeeeeee', GradientType=0);
+border-color: #eee #eee #c8c8c8;
+border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+border-top: 1px solid #ccc;
+}
+#wlt_chatwindow .head { font-size:20px; text-align:center; color:#ccc; text-shadow: 1px 1px 2px #fff; height:60px; }
+ 
+ 
+/* MAIN CHAT WINDOW */
+#chat-window { width: 70%; }
+#chat-window ul { padding:0px !important; margin:0px !important; overflow: auto; }
+#chat-window ul li { padding: 0.5em; line-height: 1.5em; border-bottom: 1px solid #ddd; }
+#chat-window ul li.empty { border-width: 0; }
+#chat-window .author { font-weight: bold; }
+	
+	/* COMMENT STYLE */
+	.commentInfo {display: inline-block;vertical-align: top;margin: 0;padding: 0;line-height: 18px; width: 80px; } 
+	.comment {position: relative;display: inline-block;width: 620px;vertical-align: top;padding: 3px 10px;background: #eee;margin-left: 0;}
+	.comment p {margin: 5px 0; font-size:16px; text-shadow: 1px 1px 2px #fff; }
+	.comment:after {content: "";position: absolute;top: 5px;left: -15px;border-style: solid;border-width: 10px 15px 10px 0;border-color: transparent #eee; display: block;width: 0;z-index: 1;}
+	#chat-window ul li:nth-child(odd) .comment { background: #fafafa; }
+	#chat-window ul li:nth-child(odd) .comment:after { border-color: transparent #fafafa; }
+	#chat-window ul li.me .comment { background: #F0FAFF; }
+	#chat-window ul li.me .comment:after { border-color: transparent #F0FAFF; }
+	
+	/* USER PHOTO */
+	#wlt_chatwindow .photo, #chat-window .avatar { width:55px; height:55px; padding:2px; border:1px solid #ddd; margin-right:10px; }
+	
+	/* USERNAME + DATE */
+	.bottombit { display:block; margin-left: 80px; font-size: 11px; color: #ccc; letter-spacing: 1px; margin-top:-10px; }
+	.bottombit .chat_username { font-weight:bold; }
+	.bottombit .chat_date {  }
+
+/* MAIN USER LIST */
+#users-list { width: 30%; border-left: 1px solid #ddd; list-style:none; }
+#users-list li { padding: 0.5em; line-height: 1.5em; border-bottom: 1px solid #ddd; clear:both; }
+#users-list li img { float:left; }
+#users-list li .username { float:left; display:block;  width:100%; }
+#users-list ul { padding:0px !important; margin:0px !important; overflow: auto; }
+ 
+/* ADMIN BUTTONS */
+#users-list li .adminoptions { float:left; display:block; width:100%; font-size:11px; margin-top:10px; }
+#users-list li .adminoptions .kick {  }
+#users-list li .adminoptions .ban {  }
