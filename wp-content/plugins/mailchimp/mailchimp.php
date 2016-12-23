@@ -3,7 +3,7 @@
 Plugin Name: MailChimp
 Plugin URI: http://www.mailchimp.com/plugins/mailchimp-wordpress-plugin/
 Description: The MailChimp plugin allows you to quickly and easily add a signup form for your MailChimp list.
-Version: 1.5.3
+Version: 1.5.5
 Author: MailChimp
 Author URI: https://mailchimp.com/
 */
@@ -25,7 +25,7 @@ Author URI: https://mailchimp.com/
 */
 
 // Version constant for easy CSS refreshes
-define('MCSF_VER', '1.5.3');
+define('MCSF_VER', '1.5.5');
 
 // What's our permission (capability) threshold
 define('MCSF_CAP_THRESHOLD', 'manage_options');
@@ -59,8 +59,7 @@ function mailchimpSF_plugin_init() {
     $locale = apply_filters( 'plugin_locale', get_locale(), $textdomain);
     load_textdomain('mailchimp_i18n', MCSF_LANG_DIR.$textdomain.'-'.$locale.'.mo');
 
-    // Check for mc_api_key or sopresto key and continue if neither
-    mailchimpSF_migrate_sopresto();
+    // Remove Sopresto check. If user does not have API key, make them authenticate.
 
     if (get_option('mc_list_id') && get_option('mc_merge_field_migrate') != true && mailchimpSF_get_api() !== false) {
         mailchimpSF_update_merge_fields(get_option('mc_list_id'));

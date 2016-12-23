@@ -116,13 +116,14 @@ function AddMYLike(pid){
 
 <ul class="nav nav-tabs" id="Tabs">
 
-        <li class="active"><a href="#t1" data-toggle="tab">{Description}</a></li>
+        <li class="active"><a href="#t1" data-toggle="tab">{Details}</a></li>
 
-        <li><a href="#t2" data-toggle="tab">{Details}</a></li>
+        <li><a href="#t2" data-toggle="tab">{Description}</a></li>
 
         <li><a href="#t4" data-toggle="tab" > <?php echo $CORE->_e(array('single','37')); ?> </a></li>
 
        <li><a href="#t6" data-toggle="tab" > <?php echo $CORE->_e(array('single','55')); ?> </a></li>
+
 
 </ul>
 
@@ -145,7 +146,7 @@ function AddMYLike(pid){
 
             <?php if($c != ""){ ?>
     		<h3><?php echo $CORE->_e(array('dating','32')); ?></h3>
-            <?php echo wpautop($c); ?>
+				    <?php echo wpautop($c); ?>
         	<?php } ?>
 
         </div>
@@ -164,14 +165,19 @@ function AddMYLike(pid){
 
             <?php if($c != ""){ ?>
             <h3><?php echo $CORE->_e(array('dating','34')); ?></h3>
-            [LISTINGDATA type=2]
+
+						[LISTINGDATA type=2]
         	<?php } ?>
 
         	[FIELDS hide="map|country|state|city|address"]
 
         </div>
 
-        <div class="tab-pane fade" id="t4">[COMMENTS tab=0]</div>
+				<h3>PetFam Member Testimonials</h3>
+				<p>Reviews may only be provided by other members. Simply ask the member with whom you've exchanged to write a review of the exchange, then copy/paste their testimonial onto your Profile here. Member's full name is required so they can be contacted and review verified by other PetFam members interested in exchanging with you.</p>
+
+				<div class="tab-pane fade" id="t4">[COMMENTS tab=0]</div>
+
 
         <div class="tab-pane fade" id="t6">[IMAGES]</div>
 

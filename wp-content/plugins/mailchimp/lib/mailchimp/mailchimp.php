@@ -18,20 +18,21 @@ class MailChimp_API {
         return;
     }
 
-    public function get($endpoint, $count=10, $fields) {
+    public function get($endpoint, $count = 10, $fields = [])
+    {
         $url = $this->api_url . $endpoint;
 
-        if($count) {
+        if ($count) {
             $query_params = 'count=' . $count . '&';
         }
 
-        if(!empty($fields)) {
-            foreach($fields as $field => $value) {
+        if (!empty($fields)) {
+            foreach ($fields as $field => $value) {
                 $query_params .= $field . '=' . $value . '&';
             }
         }
 
-        if($query_params){
+        if ($query_params) {
             $url .= "?{$query_params}";
         }
 
@@ -39,15 +40,15 @@ class MailChimp_API {
             'timeout'     => 5,
             'redirection' => 5,
             'httpversion' => '1.1',
-            'user-agent'  => 'MailChimp WordPress Plugin/' . get_bloginfo( 'url' ),
+            'user-agent'  => 'MailChimp WordPress Plugin/' . get_bloginfo('url'),
             'headers'     => array("Authorization" => 'apikey ' . $this->key)
         );
 
         $request = wp_remote_get($url, $args);
 
-        if(is_array($request) && $request['response']['code'] == 200) {
+        if (is_array($request) && $request['response']['code'] == 200) {
             return json_decode($request['body'], true);
-        } elseif(is_array($request) && $request['response']['code']) {
+        } elseif (is_array($request) && $request['response']['code']) {
             $error = json_decode($request['body'], true);
             $error = new WP_Error('mailchimp-get-error', $error['detail']);
             return $error;
@@ -56,7 +57,7 @@ class MailChimp_API {
         }
     }
 
-    public function post($endpoint, $body, $method='POST') {
+    public function post($endpoint, $body, $method = 'POST') {
         $url = $this->api_url . $endpoint;
         
         $args = array(

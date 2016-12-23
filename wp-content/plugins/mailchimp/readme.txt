@@ -3,7 +3,7 @@ Contributors: MailChimp
 Tags: mailchimp, email, newsletter, signup, marketing, plugin, widget
 Requires at least: 2.8
 Tested up to: 4.5
-Stable tag: 1.5.3
+Stable tag: 1.5.5
 
 == Description ==
 
@@ -93,6 +93,9 @@ If your language is not listed above, feel free to create a translation. Here ar
 
 == Upgrade Notice ==
 
+= 1.5.5 =
+If you are updating from v1.4.x, you will need to re-authorize with an API key.
+
 = 1.5 =
 Updates the MailChimp API version, adds double/single opt-in toggle.
 
@@ -126,6 +129,12 @@ Fixes major bug with "Settings" link on Plugins screen.
 Added support for multiple interest groups, field formatting based on type and date picker.
 
 == Changelog ==
+
+= 1.5.5 =
+* Fix timeout error on activation.
+
+= 1.5.4 =
+* Set optional value for API wrapper.
 
 = 1.5.3 =
 * Fix PHP7 compatibility issue
