@@ -178,7 +178,7 @@ if(isset($GLOBALS['CORE_THEME']['listingcats']) && $GLOBALS['CORE_THEME']['listi
 				}
 
 				?>
-								<!--//JOSH// Step 1: Introduction and Keywords-->
+								<!--//JOSH// Step 1: About Me-->
 								<a href="#step<?php echo $i; ?>" class="astep<?php echo $i; ?> <?php if($k == 6){ echo 'mapboxlink'; } ?>" data-parent="#wlt_stepswizard" data-toggle="collapse"><?php echo $step['title'] ?></a>
 
             </div>
@@ -195,7 +195,7 @@ if(isset($GLOBALS['CORE_THEME']['listingcats']) && $GLOBALS['CORE_THEME']['listi
 			  switch($k){
 
 
-				case "2": { // LISTING DESCRIPTION //JOSH//Introduction and Key
+				case "2": { // LISTING DESCRIPTION //JOSH//About Me
 
 					if(isset($_GET['eid'])){
 
