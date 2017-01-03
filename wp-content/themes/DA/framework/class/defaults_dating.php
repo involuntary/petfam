@@ -661,7 +661,7 @@ echo ob_get_clean();
       <input type="hidden" name="action"  value="invitechat" />
       <input type="hidden" name="user_id" id="daInviteUid" value="" />
       <button type="submit" class="btn btn-primary"><?php echo $CORE->_e(array('dating','11')); ?></button>
-      
+
       </form>
 
       </div>

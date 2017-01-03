@@ -5,51 +5,51 @@ global $CORE;
 function html5_comment( $comment, $depth, $args ) { global $CORE, $post;
 
 		$tag = ( 'div' === $args['style'] ) ? 'div' : 'li'; $STAR = "";
-		
+
 		// GET COMMENT SCORE
 		$score = get_post_meta($comment->comment_ID, 'score', true);
-		
+
 		// STAR RATING
 		if($score != ""){
 		$STAR = " <div id='wlt_star_".$comment->comment_ID."' class='wlt_starrating'></div>
-				<script>jQuery(document).ready(function(){ 
+				<script>jQuery(document).ready(function(){
 				jQuery('#wlt_star_".$comment->comment_ID."').raty({
 				path: '".FRAMREWORK_URI."img/rating/',
 				score: ".$score.",
 				size: 16,
-			 
+
 				readOnly : true,
 				}); }); </script>";
 		}
 
-?> 
+?>
 		<<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
 
 
 <article id="div-comment-<?php comment_ID(); ?>" class="comment-body clearfix">
-    
+
 
 <div class="col-md-2 col-sm-2 col-xs-2">
 
-	  <?php echo str_replace("avatar ","avatar img-responsive ",get_avatar( $comment ) ); ?> 
-    
+	  <?php echo str_replace("avatar ","avatar img-responsive ",get_avatar( $comment ) ); ?>
+
 </div>
 
 
 <div class="col-md-10 col-sm-10 col-xs-10">
-	
+
     <?php echo $STAR; ?>
-    
+
     <?php printf( __( '%s <span class="says">'.$CORE->_e(array('author','26a')).' '.hook_date( $comment->comment_date ).':</span>' ), sprintf( '<b class="fn">%s</b>', get_comment_author_link() ) ); ?>
-    
+
     <hr />
-    
+
 	<?php comment_text(); ?>
-    
-    <?php comment_reply_link( $args, $comment, $post ); ?> 
+
+    <?php comment_reply_link( $args, $comment, $post ); ?>
 
 </div>
- 
+
 
 </article><!-- .comment-body -->
 <?php
@@ -97,7 +97,7 @@ if ( post_password_required() ) {
 
 <?php endif; // have_comments() ?>
 
-<?php 
+<?php
 
 
 
@@ -105,7 +105,7 @@ $fields =  array(
 
   'author' =>
     '<p>  ' .
-  
+
     '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
     '" size="30" placeholder="' . __( 'Name', 'domainreference' ) . '" class="form-control" /></p>',
 
@@ -119,13 +119,13 @@ $fields =  array(
     '<p>' .
     '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
     '" size="30" placeholder="' . __( 'Website', 'domainreference' ) . '" class="form-control" /></p>',
-  
-	
+
+
 );
- 
+
 
 $comments_args = array(
-        // change the title of send button 
+        // change the title of send button
         'label_submit'=>'Send',
 		 'comment_notes_before' => '',
         // change the title of the reply section
@@ -138,7 +138,7 @@ $comments_args = array(
 		// FIELDS
  		'fields' => apply_filters( 'comment_form_default_fields', $fields ),
 );
- 
+
 ?>
 
 <div class='text-center'><a class='btn btn-lg btn-success' href="javascript:void(0);" onclick="jQuery('#wlt_comments_form').show(); jQuery('#wlt_comments_form_lc').hide();" id="wlt_comments_form_lc"><?php echo $CORE->_e(array('single','46')); ?></a></div>
@@ -146,4 +146,3 @@ $comments_args = array(
 <a class='badge pull-right' href="javascript:void(0);" onclick="jQuery('#wlt_comments_form').hide(); jQuery('#wlt_comments_form_lc').show();"><?php echo $CORE->_e(array('single','14')); ?></a>
 <?php comment_form($comments_args); ?>
 </div>
- 

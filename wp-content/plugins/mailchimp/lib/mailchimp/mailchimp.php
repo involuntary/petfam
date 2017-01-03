@@ -18,7 +18,7 @@ class MailChimp_API {
         return;
     }
 
-    public function get($endpoint, $count = 10, $fields = [])
+    public function get($endpoint, $count = 10, $fields = array())
     {
         $url = $this->api_url . $endpoint;
 

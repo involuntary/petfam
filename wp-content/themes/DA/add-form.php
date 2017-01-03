@@ -200,7 +200,8 @@ if(isset($GLOBALS['CORE_THEME']['listingcats']) && $GLOBALS['CORE_THEME']['listi
 					if(isset($_GET['eid'])){
 
 						// TITLE
-						echo "<h1>".$CORE->_e(array('add','97'))."</h1>";
+						//JOSH// Removed the title line
+						// echo "<h1>".$CORE->_e(array('add','97'))."</h1>";
 
 						// CUSTOM TEXT
 						if(isset($GLOBALS['CORE_THEME']['custom']['edit_text']) && strlen($GLOBALS['CORE_THEME']['custom']['edit_text']) > 2 ){

@@ -3,7 +3,7 @@ Contributors: MailChimp
 Tags: mailchimp, email, newsletter, signup, marketing, plugin, widget
 Requires at least: 2.8
 Tested up to: 4.5
-Stable tag: 1.5.5
+Stable tag: 1.5.6
 
 == Description ==
 
@@ -129,6 +129,8 @@ Fixes major bug with "Settings" link on Plugins screen.
 Added support for multiple interest groups, field formatting based on type and date picker.
 
 == Changelog ==
+= 1.5.6 =
+* Fixes short array notation which caused a fatal error in older PHP versions.
 
 = 1.5.5 =
 * Fix timeout error on activation.
