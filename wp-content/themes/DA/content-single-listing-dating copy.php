@@ -143,13 +143,13 @@ function AddMYLike(pid){
 
 						[FIELDS hide="pettype|mybreeds|Schedule|careneeddescription|exchangetypeseeking|lastminutecarerequired|behaviour|specialneedsrequired"]
 
-						
+
 
         </div>
 
         <div class="tab-pane" id="t2">
 
-					[FIELDS hide="linkedin|carecalendaravailable|lastminutecareavailable|exchangetypeoffering|facebook|website|twitter|experience|willingtosharephotoid|specialneeds|havepolicerecordcheck|numberofexchanges|neighbourhood|references|phone|address|category"]
+					[FIELDS hide="linkedin|carecalendaravailable|lastminutecareavailable|exchangetypeoffering|facebook|website|twitter|experience|willingtosharephotoid|specialneeds|havepolicerecordcheck|numberofexchanges|neighbourhood|references|phone|address|category|keywords"]
 
         </div>
 
@@ -168,7 +168,13 @@ function AddMYLike(pid){
 
 
 
-        <div class="tab-pane fade" id="t6">[IMAGES]</div>
+        <div class="tab-pane fade" id="t6">
+
+				[IMAGES]
+				[VIDEO]
+				[FILES type='doc']
+
+				</div>
 
 
 </div>
