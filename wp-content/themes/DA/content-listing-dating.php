@@ -30,16 +30,9 @@ ob_start();
         <h4>[TITLE] </h4>
 
         <small>[GENDER-ICON] [GENDER] / [AGE] / [LOCATION-FLAG] / [DISTANCE] / Joined: [DATE]</small>
-        </br>
-        </br>
-
-[CONTACT style=1]
-
-[FAVS class='btn btn-labeled btn-danger']
-
-[EXCERPT size=500]
-
+        <small>[EXCERPT size=500]  </small>
     </div>
+
 
 </div>
 
