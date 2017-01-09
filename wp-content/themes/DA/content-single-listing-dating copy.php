@@ -1,5 +1,6 @@
 <?php
 /*
+Modified by Josh
 * Theme: PREMIUMPRESS CORE FRAMEWORK FILE
 * Url: www.premiumpress.com
 * Author: Mark Fail
