@@ -137,7 +137,9 @@ if(isset($GLOBALS['CORE_THEME']['listingcats']) && $GLOBALS['CORE_THEME']['listi
 
 <!--Save profile button -->
 
-    <button class="btn btn-primary" type="submit" id="MainSaveBtn"><?php echo $CORE->_e(array('add','16')); ?></button>
+<button class="btn btn-primary" type="submit" id="MainSaveBtn"><?php echo $CORE->_e(array('add','16')); ?></button>
+
+    <a href="<?php echo get_permalink($result[0]->ID); ?>" class="btn btn-primary" type="submit" id="MainSaveBtn">View Profile<?php //echo $CORE->_e(array('dating','82')); ?></a>
 
 <!--cancel button -->
     <a class="btn btn-default pull-right hidden-xs" href="<?php echo $elink; ?>"><?php echo $CORE->_e(array('button','8')); ?></a>
@@ -335,7 +337,7 @@ if(isset($GLOBALS['CORE_THEME']['listingcats']) && $GLOBALS['CORE_THEME']['listi
 				} break;
 				case "5": { // LISTING ATTRIBUTES
 
-				echo $CORE->BUILD_FIELDS(hook_add_fieldlist($field),$data);
+				// echo $CORE->BUILD_FIELDS(hook_add_fieldlist($field),$data);
 				echo $CORE->CORE_FIELDS(false,true); // CUSTOM FIELDS
 
 				} break;

@@ -9,9 +9,47 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-/*
+.cpm-search-msg{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
 
-	NOTE THIS FILE IS NOT USED WITHIN THE THEME
-	THEREFORE ADDING CONTENT TO IT WILL NOT WORK
-	
-*/
+
+.wlt_search_results.list_style .btn.btn-labeled.btn-success.custom-btn{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.cpm-btn-remove{
+    color: #fff;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    transition: 1s ease;
+}
+
+.cpm-btn-remove:hover{
+    color: #fff !important;
+    background-color: #ac2925;
+    border-color: #761c19;
+}
+
+.wlt_search_results.list_style .btn.btn-labeled.btn-success.custom-btn .btn-label,
+.btn.btn-labeled.custom-btn.cpm-btn-remove .btn-label{
+    background: rgba(0,0,0,0.15);
+    border-radius: 3px 0 0 3px;
+    display: inline-block;
+    left: -12px;
+    padding: 6px 12px;
+    position: relative;
+    transition: 1s ease;
+}
+
+[dir="ltr"] ,
+[dir="ltr"] svg ,
+[dir="ltr"] {
+    width: 100% !important;
+}
